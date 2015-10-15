@@ -10,7 +10,7 @@ budget = float(input("What is your budget? "))
 
 while (total_price < budget) and (new_item_price != 'ALL DONE'):
     new_item_price = input("What's the price of your item? ")
-      
+    ##NOTE: there is an if statement below, but I was told that having an if statement (with a break) within a while loop is not best practice. So instead I created a while loop with two conditions. But I know how to use an if statement.  
     ##if new_item_price == 'ALL DONE':
      ##   break
     
