@@ -18,9 +18,8 @@ while (total_price < budget) and (new_item_price != 'ALL DONE'):
     total_price = sum(grocery_list)
     remaining_money = budget - total_price
     print("Added that price to the list. The list now has " + str(len(grocery_list)) + " items.")
-    print('The total is now $' + str(total_price) + ' .')
-    print('You have $' + str(remaining_money) + ' remaining.')
+    print('The total is now $' + str(round(total_price, 2)) + ' .')
+    print('You have $' + str(round(remaining_money, 2)) + ' remaining.')
     continue
 
-print('Thank you for shopping at the store. You are $' + str(total_price - budget) + " OVER budget.")                     
-    
+print('Thank you for shopping at the store. You are $' + str((total_price - budget)) + " OVER budget.")
