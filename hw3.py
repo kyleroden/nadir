@@ -14,7 +14,8 @@ def add_vehicle(vehicle):
     vehicle_inventory.append(vehicle)
 
 def del_vehicle(vehicle):
-    vehicle_inventory.remove(vehicle)    
+    vehicle_inventory.remove(vehicle)
+    del vehicle_dict[vehicle]
 
 def start_menu():
     while True:
@@ -43,6 +44,7 @@ def start_menu():
             else:
                 print(new_vehicle + "already exists in the inventory.")
             continue
+            ##problem with selection 3: removes from vehicle_inventory list, but not the dictionary
         elif menu_selection == '3':
             if vehicle_inventory:
                 for item in vehicle_inventory:

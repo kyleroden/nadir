@@ -26,9 +26,5 @@ while counter < new_word_length:
     continue
 
 print("".join(word_list))
-        
-##if word[0]:
- ##   print(word[0])
-##if word[1]:
- ##   print(word[1])
+
     
